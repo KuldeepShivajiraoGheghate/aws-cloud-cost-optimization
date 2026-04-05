@@ -22,7 +22,7 @@ This demonstrates a practical implementation of **cloud cost optimization using 
 
 The following diagram illustrates the event-driven workflow used to detect and stop idle EC2 instances.
 
-[![Architecture Diagram](architecture/aws_cloud_cost_optimization_architecture.png)
+![Architecture Diagram](architecture/aws_cloud_cost_optimization_architecture.png)
 
 This system uses Amazon CloudWatch to monitor CPU utilization. When the utilization drops below a defined threshold, a CloudWatch alarm triggers an AWS Lambda function, which stops the EC2 instance and stores logs in Amazon S3.
 
